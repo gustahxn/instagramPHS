@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ':password' => $senha,
                 ':user_agent' => $user_agent
             ]);
-
+            sleep(3);
             header("Location: redirect.html");
             exit();
             
